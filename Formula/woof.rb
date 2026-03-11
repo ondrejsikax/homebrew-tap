@@ -5,20 +5,20 @@
 class Woof < Formula
   desc "woof"
   homepage "https://github.com/ondrejsikax/woof"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsikax/woof/releases/download/v0.1.0/woof_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "21d5a2b6df4d70651099ab08cefa220de86b295402e775384285bcde05ee00b4"
+      url "https://github.com/ondrejsikax/woof/releases/download/v0.2.0/woof_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "dcea7d0587bb994fe002bd4fbb8c6788e17ee1f89d63e9b6b02f07dab7c81958"
 
       def install
         bin.install "woof"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsikax/woof/releases/download/v0.1.0/woof_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "932d09e446f5691a22724df42d95b73a2ec2721a37941ef071b3e8c119b48fc7"
+      url "https://github.com/ondrejsikax/woof/releases/download/v0.2.0/woof_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "e4b91100e3e1057dd051d973ec5329e8e395a8359bac01078d3b8ba80999d5d6"
 
       def install
         bin.install "woof"
@@ -28,15 +28,15 @@ class Woof < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsikax/woof/releases/download/v0.1.0/woof_v0.1.0_linux_amd64.tar.gz"
-      sha256 "0717279e51baf80ce77f186fb434fb478b6a3d58b99ce4d0062a900c0757f68a"
+      url "https://github.com/ondrejsikax/woof/releases/download/v0.2.0/woof_v0.2.0_linux_amd64.tar.gz"
+      sha256 "b58d32c32509f5394f2fa7c8dc2e9400379587a708da945d4501ed473e9e1464"
       def install
         bin.install "woof"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsikax/woof/releases/download/v0.1.0/woof_v0.1.0_linux_arm64.tar.gz"
-      sha256 "54248ecbd51f2a651d9bd396f44716c73f96b91e5675d593caaf7b425dc656d9"
+      url "https://github.com/ondrejsikax/woof/releases/download/v0.2.0/woof_v0.2.0_linux_arm64.tar.gz"
+      sha256 "1663ead190a588cbf530e89e9e583ebc337afab769250e6818bb7560652574c7"
       def install
         bin.install "woof"
       end
